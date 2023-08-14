@@ -106,3 +106,8 @@ h3{
     background-image: linear-gradient(to right top, #000000, #010101, #020102, #030203, #040304, #0c050c, #120613, #160818, #1c0c22, #200f2e, #23103b, #241349);
 }
 
+.ja{
+    text-decoration: none;
+    color: white;
+    bottom: 15px;
+}
