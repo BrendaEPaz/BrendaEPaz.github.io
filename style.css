@@ -182,9 +182,9 @@ h3{
 }
 
 .card{
-    width: 70% !important;
-    padding: 20px !important;
-    margin: 60px !important;
+    width: 80% !important;
+    padding: 10px !important;
+    margin: 20px !important;
     display: flex !important;
 
     
@@ -295,10 +295,23 @@ article:hover{
     font-style: normal;
 }
 .pack article{
-   
     margin: 30px;
 }
-.lenguaje{
-    margin: 5px;
+
+
+.sobremi b{
+    font-size: 18px;
 }
 
+.gtranslate_wrapper{
+    border-style: hidden !important;
+    padding: 8px 0;
+}
+
+@media screen and (max-width:1200px) {
+    .col-md-8{
+        background-color: #50199d;
+        
+    }
+    
+}
