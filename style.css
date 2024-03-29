@@ -363,10 +363,13 @@ article:hover{
         top: 75px;
         background-color:#e9e7e0;
         width: 180px;
+        border-color: #50199d;
+        border-width: 2px;
     }
    
     nav li:hover{
         border-style: none;
+        
     }
     .instagram{
         display: flex;
