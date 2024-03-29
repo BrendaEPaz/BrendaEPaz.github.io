@@ -7,4 +7,8 @@ function mostrarOcultarMenu(){
         menu.style.display = "block";
     }
 }
-      
+
+function cerrarMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display = "none";
+  }
