@@ -9,6 +9,11 @@
     from{border-color: #E7DBCE}
     to{border-color:#50199d}
 }
+@keyframes coloresresponsive{
+    from{border-bottom-color: #E7DBCE}
+    to{border-bottom-color:#50199d}
+}
+
 
 .main{
     background-color: #e9e7e0;
@@ -308,10 +313,63 @@ article:hover{
     padding: 8px 0;
 }
 
+
+.headerresponsive{
+    display: none !important;
+}
+
 @media screen and (max-width:1200px) {
-    .col-md-8{
-        background-color: #50199d;
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display:inline-flex!important;
+        width: 15% !important;
+        justify-content: end;
+        align-items: center;       
+    }
+    header .col-md-3, .col-md-1{
+        display: none;
+    }
+    .logoresponsive{
+        display: flex;
+        width: 80% !important;
         
     }
-    
+    .logoresponsive img{
+        padding-bottom: 10px;
+        flex-shrink:0;
+        width:280px;
+    }
+
+    header .col-md-3{
+        justify-items: right;
+    }
+    header h1{
+        width: 100%;
+    }
+    .headerresponsive{
+        display: flex !important;
+        flex-direction: row;
+        
+    }
+
+
+    nav ul{
+        z-index: 2;
+        display: block !important;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color:#e9e7e0;
+        width: 180px;
+    }
+   
+    nav li:hover{
+        border-style: none;
+    }
+    .instagram{
+        display: flex;
+        justify-content:center;
+    }
 }

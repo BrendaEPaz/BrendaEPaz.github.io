@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>JLB</title>
   <link rel="icon" type="image/png" sizes="16x16" href="./imágenes/2257865334cab3a-removebg-preview.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,12 +23,13 @@
           <h1>JLB</h1>
         </a>
       </div>
-
       <div class="col-md-3">
         <a href="index.html"><img src="./imágenes/l&dblack.png" alt="lifestyle & destination photography"></a>
       </div>
 
-      <div class="col-md-8">
+      
+
+      <nav id="menu" class="col-md-8 responsive">
         <ul class="nav justify-content-end">
           <li class="nav-item ">
             <a class="nav-link active" aria-current="page" href="Sobremi.html">About me</a>
@@ -47,19 +50,29 @@
             <a class="nav-link" href="contacto.html">Contact</a>
           </li>
 
-            <div class="instagram">
-          <li class="gtranslate_wrapper">
-            <div class="gtranslate_wrapper"></div>
-<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","es"],"wrapper_selector":".gtranslate_wrapper"}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
-          </li>  
+          <div class="instagram">
+            <li class="gtranslate_wrapper">
+              <div class="gtranslate_wrapper"></div>
+              <script>window.gtranslateSettings = { "default_language": "en", "native_language_names": true, "languages": ["en", "es"], "wrapper_selector": ".gtranslate_wrapper" }</script>
+              <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+            </li>
           </div>
-          </ul>
+        </ul>
+      </nav>
+
+      <div class="headerresponsive row">
+        <div class="logoresponsive">
+          <img src="imágenes/logo_responsive-removebg-preview.png" alt="">
+        </div>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
       </div>
       
 
+
     </header>
-    
+
 
 
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -105,25 +118,30 @@
       <h3 id="destinations"><br>Destinations</h3>
       <div class="col-md-6 cartas">
         <div class="card col-md-6">
-        <img src="imágenes/los cabos/sanlucass.jpg" class="card-img-top" alt="...">
+          <img src="imágenes/los cabos/sanlucass.jpg" class="card-img-top" alt="...">
 
-        <div class="card-body">
-          <h5 class="card-title">Cabo San Lucas</h5>
-          <p class="card-text">Cabo San Lucas, nestled at the tip of Baja California Sur, Mexico, offers a captivating mix of sun, sea, and adventure. With landmarks like Land's End and a lively marina scene, it promises relaxation and excitement against a backdrop of stunning coastal beauty. </p>
-          
+          <div class="card-body">
+            <h5 class="card-title">Cabo San Lucas</h5>
+            <p class="card-text">Cabo San Lucas, nestled at the tip of Baja California Sur, Mexico, offers a captivating
+              mix of sun, sea, and adventure. With landmarks like Land's End and a lively marina scene, it promises
+              relaxation and excitement against a backdrop of stunning coastal beauty. </p>
+
+          </div>
         </div>
-      </div>
       </div>
 
       <div class="col-md-6 cartas">
         <div class="card">
-        <img src="imágenes/los cabos/sanjose.jpeg" class="card-img-top" alt="...">
+          <img src="imágenes/los cabos/sanjose.jpeg" class="card-img-top" alt="...">
 
-        <div class="card-body">
-          <h5 class="card-title">San Jose Del Cabo</h5>
-          <p class="card-text">San Jose del Cabo, adjacent to Cabo San Lucas in Baja California Sur, Mexico, offers a serene retreat marked by colonial charm, artistic expression, and natural beauty. Its historic downtown, lively arts scene, and pristine beaches create an inviting atmosphere for visitors to unwind and explore the destination's rich cultural heritage. </p> 
-          
-        </div>
+          <div class="card-body">
+            <h5 class="card-title">San Jose Del Cabo</h5>
+            <p class="card-text">San Jose del Cabo, adjacent to Cabo San Lucas in Baja California Sur, Mexico, offers a
+              serene retreat marked by colonial charm, artistic expression, and natural beauty. Its historic downtown,
+              lively arts scene, and pristine beaches create an inviting atmosphere for visitors to unwind and explore
+              the destination's rich cultural heritage. </p>
+
+          </div>
         </div>
       </div>
 
@@ -137,53 +155,58 @@
       <div class="reviews">
         <br><br>
         <div class="row justify-content-center">
-        <article class="col-md-5">
-          <h6>Priya Patel:</h6>
-          <p>"The photographer perfectly captured the joy and love in our family photos on the beach. Their professionalism and talent made the entire experience unforgettable. Highly recommend!"</p>
-        </article>
-        <article class="col-md-5">
-          <h6>John Smith:</h6>
-          <p>"Incredible wedding proposal photos taken on the beach in Los Cabos! Couldn't be happier with the results. Thank you!"</p>
-        </article>
-      </div>
-      <div class="row justify-content-center">
-        <article class="col-md-5">
-          <h6>Emily Brown:</h6>
-          <p>"Fantastic photo session.The photographer's attention to detail is unmatched. Will cherish these memories forever."</p>
-        </article>
-        <article class="col-md-5">
-          <h6>Sameer Kapoor:</h6>
-          <p>"Outstanding family vacation photos in Mexico. Professional service and breathtaking results."</p>
-        </article>
-      </div>
-      <div class="row justify-content-center">
-        <article class="col-md-5">
-          <h6>Sarah Campbell:</h6>
-          <p>"Exceptional beachside family reunion photos in San Jose! Professional and friendly service."</p>
-        </article>
-        <article class="col-md-5">
-          <h6>Liam MacDonald:</h6>
-          <p>"Jose's flexibility saved our family photo session. When we needed to change the time last minute, he was incredibly accommodating and made sure we still had a wonderful experience. Highly recommend"
-          </p>
-        </article>
+          <article class="col-md-5">
+            <h6>Priya Patel:</h6>
+            <p>"The photographer perfectly captured the joy and love in our family photos on the beach. Their
+              professionalism and talent made the entire experience unforgettable. Highly recommend!"</p>
+          </article>
+          <article class="col-md-5">
+            <h6>John Smith:</h6>
+            <p>"Incredible wedding proposal photos taken on the beach in Los Cabos! Couldn't be happier with the
+              results. Thank you!"</p>
+          </article>
         </div>
         <div class="row justify-content-center">
-        <article class="col-md-5">
-          <h6>Mark Wong</h6>
-          <p>"Professional service and beautiful photos."
+          <article class="col-md-5">
+            <h6>Emily Brown:</h6>
+            <p>"Fantastic photo session.The photographer's attention to detail is unmatched. Will cherish these memories
+              forever."</p>
+          </article>
+          <article class="col-md-5">
+            <h6>Sameer Kapoor:</h6>
+            <p>"Outstanding family vacation photos in Mexico. Professional service and breathtaking results."</p>
+          </article>
+        </div>
+        <div class="row justify-content-center">
+          <article class="col-md-5">
+            <h6>Sarah Campbell:</h6>
+            <p>"Exceptional beachside family reunion photos in San Jose! Professional and friendly service."</p>
+          </article>
+          <article class="col-md-5">
+            <h6>Liam MacDonald:</h6>
+            <p>"Jose's flexibility saved our family photo session. When we needed to change the time last minute, he was
+              incredibly accommodating and made sure we still had a wonderful experience. Highly recommend"
             </p>
-        </article>
-        <article class="col-md-5">
-          <h6>Rachel Thompson:</h6>
-          <p>"Great photography service by Jose. Beautiful photos, although there were slight delays in receiving the final edits. Still highly recommend!"</p>
-        </article>
-      </div>
-      
+          </article>
+        </div>
+        <div class="row justify-content-center">
+          <article class="col-md-5">
+            <h6>Mark Wong</h6>
+            <p>"Professional service and beautiful photos."
+            </p>
+          </article>
+          <article class="col-md-5">
+            <h6>Rachel Thompson:</h6>
+            <p>"Great photography service by Jose. Beautiful photos, although there were slight delays in receiving the
+              final edits. Still highly recommend!"</p>
+          </article>
+        </div>
+
       </div>
 
-      
 
-      
+
+
 
 
     </div>
@@ -196,6 +219,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
