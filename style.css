@@ -10,8 +10,8 @@
     to{border-color:#50199d}
 }
 @keyframes coloresresponsive{
-    from{border-bottom-color: #E7DBCE}
-    to{border-bottom-color:#50199d}
+    from{background-color: #E7DBCE}
+    to{background-color:rgba(88,35,181, .8); }
 }
 
 
@@ -83,10 +83,11 @@ header img{
     padding-bottom: 30px;
 }
 
-p{
+p{    
+    font-family: "Poppins", sans-serif;
+    font-weight: 300 !important;
+    font-style: normal;
     color: #10091e;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500 !important;
     font-size: 16px !important;
     padding-left: 20px;
 }
@@ -100,7 +101,9 @@ h3{
 .contacto{
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300 !important;
+    font-style: normal;
     padding-top: 20px;
     
 }
@@ -204,8 +207,10 @@ h3{
 
 .card-text{
     color: #10091e;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300 !important;
+    font-style: normal;
+    font-size: 16px;
     height: 100%;
     
 }
@@ -249,7 +254,9 @@ article{
 
 article p{
     color: #10091e;
-    font-family: 'Montserrat';
+    font-family: "Poppins", sans-serif;
+    font-weight: 300 !important;
+    font-style: normal;
     font-style: italic;
     font-size: 16px !important;
 }
@@ -262,11 +269,12 @@ article h6{
 }
 
 article:hover{
-    border: solid rgba(88,35,181, .9); 
+    /*border: solid rgba(88,35,181, .9); 
     border-width: 1.3px;
     transition: ease-out;
     animation-name: colores;  
-    animation-duration: 2s;
+    animation-duration: 2s;*/
+    transform: scale(1.01);
 }
 
 .pack{
@@ -316,6 +324,33 @@ article:hover{
 
 .headerresponsive{
     display: none !important;
+}
+
+.pack .btn{
+    border-color:#50199d;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300 !important;
+}
+
+.btn:hover{
+    border-color:rgba(88,35,181, .3)!important;
+    border-width: 1px !important;
+    animation-name: coloresresponsive;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: ease;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400 !important;
+    
+    
+}
+   
+
+.descripcion p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300 !important;
+    font-style: normal;
+    padding: 0 40px;
 }
 
 @media screen and (max-width:1200px) {
